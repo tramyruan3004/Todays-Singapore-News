@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Reem+Kufi&display=swap');
+
+:root {
+    --navBorderColor: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Start of the header === */
+/* the name of the website */
+header h1{
+    font-family: 'ChomskyRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    padding: 5px;
+    text-align: center;
+    /* border: solid red; */
+}
+
+/* the menu bar */
+nav{
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 96vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--navBorderColor);
+    border-bottom: 2px solid var(--navBorderColor);
+}
+
+nav a{
+    font-family:"SimSun-ExtB";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+}
+
+nav a:hover {
+    background: ;
+    background-color: rgba(20, 20, 20, 0.699);
+    color: white;
+}
+
+/* the header of the website */
+.page-header h1 {
+    margin: 0 auto;
+    width: 96vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-family: 'Segoe UI';
+    font-weight: 450;
+    padding: 0 0;
+    border-bottom: 2px solid var(--navBorderColor);
+    /* border: solid red; */
+    letter-spacing: 5px;
+}
+
+.page-header h2{
+    margin: 0 auto;
+    width: 96vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 30px;
+    padding: 2px 0;
+    /* border: solid red; */
+}
+
+/* === END OF HEADER ===  */
+
+/* === START OF MAIN SECTION === */
+main{
+    display: flex;
+    flex: row;
+    width: 96vw;
+    margin: 0 auto;
+    border: solid red;
+}
+/*+= START OF LEFT SECTION =+*/
+/* the left section part */
+.left-section {
+    width: 55%;
+    margin: 0 auto;
+    background-color: rgb(58, 58, 158);
+}
+
+/* the image on the left section part */
+.left-section img{
+    width: 521px;
+    height: 478px;
+    object-fit: cover;
+}
+
+/* the header h2 on the left section part */
+.left-section h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+    line-height: 45px;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    background: lightblue;
+    border-bottom: 0.5px dashed var(--navBorderColor);
+    margin-top: -5px;
+}
+
+/* the name of the Picture1 on the left section part */
+.left-section #nameOfPic1{
+    font-family: "Reem Kufi";
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    background: salmon;
+}
+
+/* the information of the Picture1 on the left section part */
+.left-section #infoOfPic1{
+    font-family: "Reem Kufi";
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    background:palevioletred;
+    margin-top: -3px;
+    border-bottom: 0.5px dashed var(--navBorderColor);
+}
+
+/* the content of the article on the left section part */
+.contentOfLeftSection {
+    font-family: "Merriweather Sans";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    display: flex;
+    flex: row;
+}
+
+.contentOfLeftSection #one{
+    padding-right: 5px;
+}
+
+.contentOfLeftSection #two{
+    padding-left: 5px;
+}
+/*+= END OF LEFT SECTION =+*/
+
+/*+= START OF RIGHT SECTION =+*/
+/* the right section part */
+.right-section {
+    width: 45%;
+    background-color: rgb(194, 119, 48);
+}
+
+/* the image on the right section part */
+.right-section img{
+    width: 338px;
+    height: 249.17px;
+    object-fit: cover;
+}
+
+
+.right-section h1{
+    font-family: 'Rancho', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    /* background:rgb(116, 14, 116); */
+    border-bottom: 2.5px solid black;
+    margin-top: 3px;
+}
+
+.right-section h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 25px;
+    font-weight: 650;
+    line-height: 38px;
+    text-align: left;
+    color: black;
+    padding: 0 0 ;
+    background: lightblue;
+    border-bottom: 0.5px dashed var(--navBorderColor);
+    margin-top: -2px;
+}
+
+/* the name of the Picture2 on the right section part */
+.right-section #nameOfPic2{
+    font-family: "Reem Kufi";
+    font-size: 6px;
+    font-weight: 600;
+    line-height: 9px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    background: salmon;
+}
+
+/* the information of the Picture2 on the right section part */
+.right-section #infoOfPic2{
+    font-family: "Reem Kufi";
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 9px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 0 0;
+    background:palevioletred;
+    margin-top: -3px;
+    border-bottom: 0.5px dashed var(--navBorderColor);
+}
+
+.contentOfRightSection{
+    font-family: "Merriweather Sans";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+
+
+/*+= END OF RIGHT SECTION =+*/
+
+/* the quotation section part */
+.quotes{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 0;
+    width: 96vw;
+    margin: 0 auto;
+    background-color:  rgb(99, 145, 31);
+}
+/* the first section on the quotation section part */
+.quotes #img1{
+    width: 178px;
+    height: 118px;
+    object-fit: cover;
+}
+
+/* the first section on the quotation section part */
+.quotes #img2{
+    width: 217px;
+    height: 118px;
+    object-fit: cover;
+}
+
+/* the first section on the quotation section part */
+.quotes #img3{
+    width: 203px;
+    height: 118px;
+    object-fit: cover;
+}
+
+/* the background of the website */
+html{
+    background-image: url('bgNp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
