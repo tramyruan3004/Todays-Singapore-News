@@ -3,9 +3,17 @@
 }
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+/* the background of the website */
+html{
+    background-image: url('../img/bgNp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* === Start of the header === */
@@ -24,7 +32,7 @@ header h1{
 nav{
     margin: 0 auto;
     padding: 5px 0;
-    width: 96vw;
+    width: 96%;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -50,7 +58,7 @@ nav a:hover {
 /* the header of the website */
 .page-header h1 {
     margin: 0 auto;
-    width: 96vw;
+    width: 96%;
     text-align: center;
     text-transform: uppercase;
     font-size: 120px;
@@ -58,13 +66,13 @@ nav a:hover {
     font-weight: 450;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
-    border: solid red;
+    /* border: solid red; */
     letter-spacing: 5px;
 }
 
 .page-header h2{
     margin: 0 auto;
-    width: 96vw;
+    width: 96%;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Segoe UI';
@@ -80,7 +88,7 @@ nav a:hover {
 main{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 96vw;
+    width: 96%;
     margin: 8px auto;
     /* border: solid red; */
 }
@@ -103,7 +111,7 @@ main{
 
 .column1 p {
     font-family: "Merriweather Sans";
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
@@ -131,9 +139,23 @@ main{
     object-fit: cover; 
 }
 
+.column2 h1{
+    font-family: "Showcard Gothic";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1.4px solid black;
+    border-bottom: 1.4px solid black;
+    width: 94%;
+
+}
+
 .column2 p {
     font-family: "Merriweather Sans";
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
@@ -143,7 +165,7 @@ main{
 
 /* Column 3 styling */
 .column3 {
-    width: 28vw;
+    width: 30vw;
     margin: 0 auto;
     background-color:slateblue;
 }
@@ -159,7 +181,7 @@ main{
 
 .column3 p {
     font-family: "Merriweather Sans";
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
@@ -173,10 +195,4 @@ main{
 
 
 
-/* the background of the website */
-html{
-    background-image: url('bgNp.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
