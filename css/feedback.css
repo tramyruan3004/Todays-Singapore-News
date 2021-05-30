@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Cabin+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+:root {
+    --navBorderColor: #808080;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+/* the background of the website */
+html{
+    background-image: url('../img/bgNp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* === Start of the header === */
+/* the name of the website */
+header h1{
+    font-family: 'ChomskyRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    padding: 5px;
+    text-align: center;
+    /* border: solid red; */
+}
+
+/* the menu bar */
+nav{
+    margin: 0 auto;
+    padding: 0 0;
+    width: 96%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--navBorderColor);
+    border-bottom: 2px solid var(--navBorderColor);
+}
+
+nav a{
+    font-family:"SimSun-ExtB";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+nav a:hover {
+    background: ;
+    background-color: rgba(20, 20, 20, 0.699);
+    color: white;
+}
+
+/* the header of the website */
+.page-header h1 {
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-family: 'Segoe UI';
+    font-weight: 450;
+    padding: 0 0;
+    border-bottom: 2px solid var(--navBorderColor);
+    /* border: solid red; */
+    letter-spacing: 5px;
+}
+/* === END OF HEADER ===  */
+
+/* === START OF MAIN SECTION === */
+main{
+    width: 96%;
+    margin: 0 auto;
+    /* border: solid red; */
+}
+
+main #headerPic{
+    margin: 15px 0 0 0;
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+}
+
+main h1{
+    font-family: 'Assistant', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    padding: 0;
+    /* background-color: cornflowerblue; */
+}
+
+/* += start of the feedback section =+ */
+.fbSection p{
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    border: solid 0.5px rgba(0,0,0,0.44);
+    background: rgba(133,129,129,0.3);
+}
+
+.feedbackForm{
+    background-color: rgba(255,255,255,0.3);
+    font-family: "Segoe UI";
+
+}
+
+input[type=text], select {
+    padding: 9px 12px;
+    margin: 8px 0;
+    border: solid 0.5px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+label{
+    padding-left: 5px;
+}
+
+#typing{
+    width: 98%;
+    height: 100px;
+    margin: 0 10px;
+    border: none;
+    border: solid 0.5px rgba(0,0,0,0.3);
+    background-color: white;
+    padding: 5px 5px
+}
+  
+
+/*  
+ * Rating styles
+ */
+.rating {
+    width: 50%;
+    margin: 0;
+    font-size: 30px;
+    overflow:hidden;
+    display: flex;
+    flex: row;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.rating p{
+    border: none;
+    background:none;
+    /* background-color: tomato; */
+}
+.rating input {
+float: left;
+opacity: 0;
+position: absolute;
+}
+.rating label {
+    float:right;
+    color: rgba(133,129,129,0.5);
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+button{
+    background-color:rgb(184, 178, 178);
+    color: rgb(39, 37, 37);
+    padding: 6px 9px;
+    border: none;
+    float: right;
+}
+
+
+/* += start of the faqs section =+ */
+.faqsSection div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 50% 50%;
+    /* background-color: darkgreen; */
+    width: 100%;
+    padding: 0 10px;
+    background: rgba(255,255,255,0.3);
+}
+
+.faqsSection #one{
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: justify;
+    background: rgba(133,129,129,0.3);
+    padding: 15px 20px;
+    margin: 20px 20px 5px 20px;
+
+
+}
+
+.faqsSection #two{
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: justify;
+    background: rgba(133,129,129,0.1);
+    padding: 15px 20px;
+    margin: 5px 20px 20px 20px;
+
+}
+
+/* += start of the contact us section =+ */
+
+.theContainer {
+    background: rgba(255,255,255,0.3);
+    margin-bottom: 15px;
+    /* border: solid red; */
+}
+
+.theContainer p{
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    padding: 10px 20px;
+}
+
+.theContainer #email{
+    padding-bottom: 5px;
+}
+.theContainer #tel{
+    padding-top: 0;
+}
+
+
+.theImages {
+    display: flex;
+    flex: row;
+    float: right;
+    margin-top: -65px;
+    margin-right: 10px;
+
+}
+
+.theImages img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+
+
+

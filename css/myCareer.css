@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 :root {
     --navBorderColor: #808080;
 }
 
 
-* {
+*{
     padding: 0;
     box-sizing: border-box;
     max-width: 1004px;
@@ -33,7 +34,7 @@ header h1{
 /* the menu bar */
 nav{
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 0 0;
     width: 96%;
     text-align: center;
     display: flex;
@@ -49,7 +50,7 @@ nav a{
     text-decoration: none;
     color: black;
     padding: 5px 10px;
-
+    margin: 0;
 }
 
 nav a:hover {
@@ -80,19 +81,32 @@ nav a:hover {
 main{
     width: 96%;
     margin: 0 auto;
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
 }
 
 /* the upper part */
 .upperPart{
-    background: seagreen;
+    /* background: seagreen; */
     display: grid;
     grid-template-columns: 72% 28%;
 }
 
-
+/* the left section on the upper part */
 .leftOne{
-    background: skyblue;
+    /* background: skyblue; */
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: solid 2px black ;
+
+}
+
+.leftOne img{
+    width: 200px;
+    height: 285px;
+    object-fit: cover;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .leftOne h1{
@@ -115,14 +129,118 @@ main{
     text-transform: uppercase;
 }
 
+.leftOne p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    /* background-color: burlywood; */
+}
 
+
+
+
+/* the right section on the upper part */
 .rightOne{
-    background: tomato;
+    /* background: tomato; */
+    padding: 10px;
+    padding-right: 0;
+    border-left: solid 2px black;
+    border-bottom: solid 2px black ;
+
+}
+
+.rightOne h1{
+    /* text-align: center; */
+    font-family: "Nirmala UI";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    padding: 8px 15px ;
+    width: 80%;
+}
+
+.rightOne p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 10px 0;
 }
 
 /* the lower part */
 .lowerPart{
-    background: rgb(79, 46, 139);
+    /* background: rgb(79, 46, 139); */
     display: grid;
     grid-template-columns: 72% 28%;
+}
+
+.leftTwo{
+    /* background: skyblue; */
+    padding: 8px 10px 0 10px
+}
+
+.leftTwo h1{
+    font-family: "Bernard MT";
+    font-size: 35px;
+    font-stretch: condensed;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.leftTwo img{
+    width: 254.6px;
+    height: 189.91px;
+    float: right;
+}
+
+.leftTwo p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    /* background-color: burlywood; */
+}
+
+/* the right section on the upper part */
+.rightTwo{
+    /* background: tomato; */
+    padding: 10px;
+    padding-right: 0;
+    border-left: solid 2px black;
+
+}
+
+.rightTwo h1{
+    /* text-align: center; */
+    font-family: "Nirmala UI";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    padding: 8px 15px ;
+    width: 80%;
+}
+
+.rightTwo p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 10px 0;
 }

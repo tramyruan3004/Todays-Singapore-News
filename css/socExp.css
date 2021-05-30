@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 :root {
     --navBorderColor: #808080;
 }
@@ -32,7 +33,7 @@ header h1{
 /* the menu bar */
 nav{
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 0 0;
     width: 96%;
     text-align: center;
     display: flex;
@@ -48,6 +49,7 @@ nav a{
     text-decoration: none;
     color: black;
     padding: 5px 10px;
+    margin: 0;
 
 }
 
@@ -107,8 +109,8 @@ nav a:hover {
 
 /* the content of the article on the upper section part */
 .upperPart #one{
-    font-family: "Merriweather Sans";
-    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
@@ -120,8 +122,8 @@ nav a:hover {
 }
 
 .upperPart #two{
-    font-family: "Merriweather Sans";
-    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
@@ -176,8 +178,8 @@ nav a:hover {
 
 .leftSection #p1{
     background: yellow;
-    font-family: "Merriweather Sans";
-    font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
     font-weight: 400;
     line-height: 15px;
     text-align: justify;
@@ -187,8 +189,8 @@ nav a:hover {
 
 .leftSection #p2{
     background: slateblue;
-    font-family: "Merriweather Sans";
-    font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
     font-weight: 400;
     line-height: 15px;
     text-align: justify;
@@ -211,8 +213,8 @@ nav a:hover {
 
 .leftSection #p4{
     background: rgb(110, 197, 129);
-    font-family: "Merriweather Sans";
-    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
     font-weight: 400;
     line-height: 17px;
     text-align: justify;
