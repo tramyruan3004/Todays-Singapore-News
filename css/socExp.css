@@ -48,6 +48,7 @@ nav a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    border-radius: 3px;
     padding: 5px 10px;
     margin: 0;
 

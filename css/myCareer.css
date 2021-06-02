@@ -49,6 +49,7 @@ nav a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    border-radius: 3px;
     padding: 5px 10px;
     margin: 0;
 }
@@ -183,8 +184,9 @@ main{
 }
 
 .leftTwo{
-    /* background: skyblue; */
-    padding: 8px 10px 0 10px
+    background: skyblue;
+    padding: 8px 10px 0 10px;
+    margin-bottom: 10px;
 }
 
 .leftTwo h1{
@@ -197,10 +199,14 @@ main{
     letter-spacing: 2px;
 }
 
-.leftTwo img{
+
+.leftTwo #floatImg{
     width: 254.6px;
     height: 189.91px;
-    float: right;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+
 }
 
 .leftTwo p{
@@ -209,15 +215,17 @@ main{
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
+    /* float: left; */
     /* background-color: burlywood; */
 }
 
 /* the right section on the upper part */
 .rightTwo{
-    /* background: tomato; */
+    background: tomato;
     padding: 10px;
     padding-right: 0;
     border-left: solid 2px black;
+    margin-bottom: 10px;
 
 }
 

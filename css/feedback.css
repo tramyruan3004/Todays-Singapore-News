@@ -50,6 +50,7 @@ nav a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    border-radius: 3px;
     padding: 5px 10px;
     margin: 0;
 }
@@ -138,30 +139,39 @@ label{
 /*  
  * Rating styles
  */
-.rating {
+.entireRating {
     width: 50%;
     margin: 0;
     font-size: 30px;
-    overflow:hidden;
     display: flex;
     flex: row;
-    flex-direction: row-reverse;
     align-items: center;
     /* background-color: aqua; */
 }
-.rating p{
+.entireRating p{
+    padding-top: 3px;
     border: none;
     background:none;
     /* background-color: tomato; */
 }
-.rating input {
-float: left;
-opacity: 0;
-position: absolute;
+
+.rating {
+    width: 226px;
+    margin: 0 ;
+    font-size: 40px;
+    overflow:hidden;
+    /* background-color: royalblue; */
 }
+.rating input {
+    float: left;
+    opacity: 0;
+    position: absolute;
+}
+
 .rating label {
-    float:right;
-    color: rgba(133,129,129,0.5);
+    letter-spacing: 5px;
+    float: right;
+    color: #aaa;
     text-decoration: none;
     -webkit-transition: color .4s;
     -moz-transition: color .4s;
@@ -170,7 +180,8 @@ position: absolute;
 }
 .rating label:hover ~ label,
 .rating input:focus ~ label,
-.rating label:hover{
+.rating label:hover
+		{
     color: orange;
     cursor: pointer;
 }
