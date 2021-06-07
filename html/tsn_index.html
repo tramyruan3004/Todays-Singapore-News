@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Module Code	:	        ST0501
+    Module Name	:	        Front-End Web Development
+    Acad Year/Semester	:	2021/2022 Semester 1
+    Assignment Title	:	CA1 – Static Website
+
+    Home Page of Todays Singapore News
+    Author: Ruan Chamei
+
+    Filename: tsn_index.html
+   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/tsn_index.css" rel="stylesheet"/>
+    <!-- Import the font for the header of the website -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chomsky" type="text/css"/>
+    <title>Todays Singapore News</title>
+</head>
+<body>
+    <header>
+        <h1>Todays Singapore News</h1>
+        <!-- The menu bar which allows users to access to other pages -->
+        <nav>
+            <a href="tsn_index.html" target="_blank">About me</a>
+            <a href="tsn_ssExp.html" target="_blank">My Journey to SP</a>
+            <a href="tsn_socSp.html" target="_blank">Life&#64;Soc</a>
+            <a href="tsn_myCareer.html" target="_blank">Career prospect</a>
+            <a href="tsn_feedback.html" target="_blank">Feedback</a>
+        </nav>
+    </header>
+
+    <!--This is the page-header which consists of the headline and the sub-headline of the page -->
+    <div class="page-header">
+        <h1>About me</h1>
+        <h2><i>"Smooth seas do not make skillfull sailors."</i>_ African proverb</h2>
+    </div>
+
+    <main>
+        <!-- the page is divided into 2 sections: left and right -->
+        <!-- The left section of the page consists of an image and a long paragraph on my learning languages jorney, my value and interest -->
+        <div class="left-section">
+            <!-- Source: It is a my portrait photo -->
+            <img src="../img/myPortrait.JPG" alt="A picture of myself">
+            <h2>A short story of adopting new languages</h2>
+            <p id="nameOfPic1">Ruan Chamei</p>
+            <p id="infoOfPic1">Diploma in Infocomm Security Management (dism)</p>
+            <!-- the content on the left section part which consists of two columns of paragraphs -->
+            <div class="contentOfLeftSection">
+                <p id="one">As a child, I was always jealous of friends around my age. I was born in Guangdong, China, so Cantonese became my first mother tongue, then I went to a Mandarin-speaking preschool. This changed my first language to Mandarin. My life was going quite smooth as both languages are relatively similar to me. However, when I was six, my family moved to Vietnam - my father's home town. Indeed, the language barrier becomes the greatest challenge to me; especially I could hardly communicate with my memaw in my daily life. From memorising the Vietnamese alphabets to forming a complete word, everything seemed harsh.
+                <br>
+                <br>
+                Nevertheless, I did not feel hopeless as my parents and family tried to spend time teaching me the language. I soon managed to make close friendships. I learned the importance of tenacity and hard-working. Then I continued my journey of learning a new language - English in Singapore. Learning English had never been the most challenging thing ever in my life till I got to know about the GCE-O level.
+                <br>
+                <br>
+                At a young age, I was always fascinated by coding and cybersecurity. As the world grows, I realised how cybercrimes could wreak havoc on the world and understood the importance</p>
+
+                <p id="two">of cybersecurity in an ever-evolving high-tech world. My adventure began at 15 when I went abroad for my studies, not to any place but to where I have always dreamed of going since I was little: to Singapore, but the course that marked this stage of my life was when I started my life in Infocomm Security Management at Singapore Polytechnic.
+                <br>
+                <br>
+                Besides my academic achievement, engaging in other activities such as playing sports, joining summer camps, hanging out with friends also help me acquire wilderness knowledge and skills that may not be taught in school. These skills can be time management, communication with others, cooperation with my teammates, and providing balanced education. I like to spend my free time adopting new programming languages as well. Writing code and creating my own programs and website are the most interesting and exciting things ever.
+                <br>
+                <br>
+                There are some values that I would highly esteem. Firstly, I highly value integrity; it is a crucial value to maintain a relationship with others.  Secondly, I think discipline is also the key to success; discipline has never been an easy task. It requires tenacity and sometimes making tough choices. The lack of discipline sometimes can also drive procrastination.</p>
+            </div>
+        </div>
+        <!-- The end of left section of the page -->
+
+        <!-- The start of right section of the page which consist of an image, a short paragraph about my personality and links to other pages section -->
+        <div class="right-section">
+            <!-- Source: It is a my family photo -->
+            <img id="familyPic" src="../img/myFamily.JPG" alt="A picture of me and my family">
+            <h2>little moments, big memories</h2>
+            <h1>An ordinary girl</h1>
+            <p id="nameOfPic2">My family and I</p>
+            <p id="infoOfPic2">Christmas night together</p>
+            <div class="contentOfRightSection">
+                <p>I believe that chummy, caring, outgoing yet unsociable and rational at times describe me. People all choose their friends, but I do not have intense standards on choosing friends for me. I easily make friends, but because of being shy, I rarely take the first step to get to know someone. I like to listen to others with a happy disposition. This is likely because I am the eldest one in my family. I am always grateful that I was born in a family of five, and being the eldest one allows me to learn to take more responsibilities. I learned to solve problems as well as take care of others.</p>
+            </div>
+
+            <!-- The start of quotes section of the page which links to other pages section -->
+            <div class="quotes">
+                <div class="firstQuote">
+                    <!-- Source: It is a my secondary school class photo -->
+                    <img id="img1" src="../img/ssClassPic.jpg" alt="a secondary school class photo">
+                    <p id="quote1"><a href="tsn_ssExp.html" target="_blank">"My journey to Singapore Poly _ School of Computing"</a></p>
+                </div>
+                <div class="secondQuote">
+                    <p id="quote2"><a href="tsn_socSp.html" target="_blank">"Memory lane in School of Computing"</a></p>
+                    <!-- Source: photo taken from unsplash, available at: https://unsplash.com/photos/9SoCnyQmkzI -->
+                    <img id="img2" src="../img/socPic.jpg" alt="the wallpaper of Soc">
+                </div>
+                <div class="thirdQuote">
+                    <!-- Source: photo taken from the school Youtube website, available at: https://i.ytimg.com/vi/YzYvbHQ66Ew/maxresdefault.jpg -->
+                    <img id="img3" src="../img/securityPic.jpg" alt="a man is coding in the dark"> 
+                    <p id="quote3"><a href="tsn_myCareer.html" target="_blank">"The future depends on what you do today"</a></p>
+                </div>
+            </div>
+            <!-- The end of the quotes section of the page -->
+        </div>
+        <!-- The end of right section of the page -->
+
+    </main>
+</body>
+</html>

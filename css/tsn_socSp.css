@@ -1,0 +1,353 @@
+/* Import all the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+/* set color #808080 as a variable */
+:root {
+    --navBorderColor: #808080;
+}
+
+/* reset the html and set max-width  */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+/* the background of the website */
+html{
+    background-image: url('../img/bgNp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e6e4dd;
+
+}
+
+
+/* === Start of the header === */
+/* the name of the website styling */
+header h1{
+    font-family: 'ChomskyRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* the menu bar styling */
+nav{
+    margin: 0 auto;
+    padding: 0 0;
+    width: 96%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--navBorderColor);
+    border-bottom: 2px solid var(--navBorderColor);
+}
+
+nav a{
+    font-family:"SimSun-ExtB";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0;
+
+}
+
+nav a:hover {
+    background-color: rgba(20, 20, 20, 0.699);
+    color: white;
+}
+/* === End of the header === */
+
+/* === Start of the page-header section === */
+/* the header of the page */
+.page-header h1 {
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-family: 'Segoe UI';
+    font-weight: 450;
+    padding: 0 0;
+    border-bottom: 2px solid var(--navBorderColor);
+    letter-spacing: 3px;
+}
+
+/* the sub-headline of the page */
+.page-header h2{
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 26px;
+    padding: 5px 0;
+}
+/* === End of the page-header section === */
+
+
+/* === START OF MAIN SECTION === */
+/*+= Start of the upper part of the page =+*/
+/* the upper part */
+.upperPart{
+    width: 96%;
+    display: grid;
+    grid-template-columns: 45% 27% 28%;
+    margin-top: 5px ;
+    margin-bottom: 15px;
+}
+
+/* the styling of the image on the upper section part */
+.upperPart img{
+    width: 400px;
+    height: 270px;
+    margin: auto 2px 5px 0;
+    object-fit: cover;
+}
+
+/* the content of the article on the upper section part */
+.upperPart #one{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: -18px;
+    margin-right: 10px;
+    padding-right: 5px;
+    width: auto;
+}
+
+.upperPart #two{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    text-align: justify;
+    width: auto;
+}
+/*+= End of the upper part of the page =+*/
+
+/*+= Start of the lower part of the page =+*/
+/* the lower part */
+.lowerPart{
+    width: 96%;
+}
+
+/* the title of the article of the lower part */
+.lowerPart h1{
+    font-family: "Bernard MT";
+    font-size: 38px;
+    font-stretch: condensed;
+    font-weight: 500;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* the quote of the lower part */
+.lowerPart h2{
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+/*- start of the content of the lower part -*/
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 20px ;
+}
+/*+ start of left section of the lower part +*/
+.leftSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+/* the styling of the paragraphs */
+.leftSection #p1{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: justify;
+    margin: 0 0 0px 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.leftSection #p2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: justify;
+    margin: 0 10px 0px 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.leftSection #p3{
+    background-color: #201d1d;
+    color: #ffffff;
+    font-family: "NSimSun";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 40px 10px 20px 15px;
+    padding: 35px 25px;
+}
+
+.leftSection #p4{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 25px 10px 10px 10px;
+}
+/*+ end of left section of the lower part +*/
+
+/*+ start of right section of the lower part +*/
+/* the styling of img1 */
+.rightSection #img1{
+    width: 380px;
+    height: 290px;
+    object-fit: cover;
+    margin: 0 5px 10px 5px ;
+}
+
+/* the styling of img2 */
+.rightSection #img2{
+    width: 380px;
+    height: 202px;
+    object-fit: cover;
+    margin: 5px 5px 15px 5px ;   
+}
+/*+ end of right section of the lower part +*/
+/*- end of the content of the lower part -*/
+/*+= End of the lower part of the page =+*/
+/* === END OF MAIN SECTION === */
+
+
+/* Making the website responsive */
+/* when the max-width is 1000px*/
+@media screen and (max-width: 1000px) {
+    .upperPart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .upperPart img {
+        margin: 10px auto;
+    }
+
+    .upperPart #one, .upperPart #two{
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .content{
+        grid-template-columns: 95% 0;
+    }
+
+    .leftSection{
+        margin-left: 35px;
+    }
+
+    .rightSection #img1, .rightSection #img2{
+        display: none;
+    }
+}
+
+/* when the max-width is 650px*/
+@media screen and (max-width: 650px) {
+    header h1{
+        font-size: 45px;
+    }
+    
+    .page-header h1{
+        font-size: 80px;
+        font-weight: 600;
+    }
+
+    .lowerPart h2{
+        font-size: 16px;
+    }
+
+    .leftSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftSection #p1{
+        border-bottom: none;
+        margin-bottom: 10px;
+    }
+
+    .leftSection #p2{
+        margin: 0 auto;
+        padding-left: 5px ;
+    }
+
+    .leftSection #p3{
+        margin: 20px;
+    }
+
+    .leftSection #p4{
+        margin-top: 0;
+    }
+}
+
+/* when the max-width is 460px*/
+@media screen and (max-width: 460px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    .page-header h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .upperPart img{
+        width: 80%;
+    }
+
+    .lowerPart h2{
+        font-size: 11px;
+    }
+
+    .leftSection{
+        margin-left: 0px;
+    }
+
+    .leftSection #p1, .leftSection #p2{
+    margin-left: 10px;
+    }
+}
+
+

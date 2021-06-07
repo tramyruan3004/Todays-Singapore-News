@@ -1,10 +1,13 @@
+/* Import all the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Cabin+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
+/* set color #808080 as a variable */
 :root {
     --navBorderColor: #808080;
 }
 
+/* reset the html and set max-width  */
 *{
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +26,7 @@ html{
 
 
 /* === Start of the header === */
-/* the name of the website */
+/* the name of the website styling */
 header h1{
     font-family: 'ChomskyRegular';
     font-weight: normal;
@@ -31,10 +34,9 @@ header h1{
     font-size: 60px;
     padding: 5px;
     text-align: center;
-    /* border: solid red; */
 }
 
-/* the menu bar */
+/* the menu bar styling */
 nav{
     margin: 0 auto;
     padding: 0 0;
@@ -58,12 +60,13 @@ nav a{
 }
 
 nav a:hover {
-    background: ;
     background-color: rgba(20, 20, 20, 0.699);
     color: white;
 }
+/* === End of the header === */
 
-/* the header of the website */
+/* === Start of the page-header section === */
+/* the header of the page */
 .page-header h1 {
     margin: 0 auto;
     width: 96%;
@@ -74,34 +77,33 @@ nav a:hover {
     font-weight: 450;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
-    /* border: solid red; */
     letter-spacing: 5px;
 }
-/* === END OF HEADER ===  */
+/* === End of the page-header section === */
+
 
 /* === START OF MAIN SECTION === */
 main{
     width: 96%;
     margin: 0 auto;
-    /* border: solid red; */
 }
-
+/* the styling of the image of the page  */
 main #headerPic{
     margin: 15px 0 0 0;
     width: 100%;
     height: 265px;
     object-fit: cover;
 }
-
+/* the styling of the heading of all the sections */
 main h1{
     font-family: 'Assistant', sans-serif;
     font-size: 45px;
     font-weight: 800;
     padding: 0;
-    /* background-color: cornflowerblue; */
 }
 
-/* += start of the feedback section =+ */
+/*+= Start of the feedback section of the page =+*/
+/* the styling of the content in the feedback section of the page */
 .fbSection p{
     font-family: "Segoe UI";
     font-size: 16px;
@@ -110,10 +112,15 @@ main h1{
     background: rgba(133,129,129,0.3);
 }
 
+/* the styling of the feedback form in the feedback section of the page */
 .feedbackForm{
     background-color: rgba(255,255,255,0.3);
     font-family: "Segoe UI";
 
+}
+/* the styling of the first name part, last name part and sex part */
+.firstNameBox, .lastNameBox, .sexBox{
+    display: inline-block;
 }
 
 input[type=text], select {
@@ -127,6 +134,7 @@ label{
     padding-left: 5px;
 }
 
+/* the styling of the feedback area part */
 #typing{
     width: 98%;
     height: 100px;
@@ -136,34 +144,31 @@ label{
     background-color: white;
     padding: 5px 5px
 }
-  
 
-/*  
- * Rating styles
- */
+/* the styling of the rating part */
 .entireRating {
     width: 50%;
     margin: 0;
     font-size: 30px;
-    display: flex;
-    flex: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
-    /* background-color: aqua; */
 }
+/* the styling of the paragraph in the rating part */
 .entireRating p{
     padding-top: 3px;
     border: none;
     background:none;
-    /* background-color: tomato; */
 }
 
+/* the styling of the stars in the rating part */
 .rating {
     width: 226px;
     margin: 0 ;
     font-size: 40px;
     overflow:hidden;
-    /* background-color: royalblue; */
 }
+
 .rating input {
     float: left;
     opacity: 0;
@@ -180,6 +185,7 @@ label{
     -o-transition: color .4s;
     transition: color .4s;
 }
+
 .rating label:hover ~ label,
 .rating input:focus ~ label,
 .rating label:hover
@@ -188,6 +194,7 @@ label{
     cursor: pointer;
 }
 
+/* the styling of the submit buttom */
 button{
     background-color:rgb(184, 178, 178);
     color: rgb(39, 37, 37);
@@ -195,52 +202,89 @@ button{
     border: none;
     float: right;
 }
+/*+= End of the feedback section of the page =+*/
 
-
-/* += start of the faqs section =+ */
-.faqsSection div{
+/*+= Start of the fqas section of the page =+*/
+.theBoxes{
     display: grid;
     grid-template-columns: 25% 25% 25% 25% ;
-    grid-template-rows: 50% 50%;
-    /* background-color: darkgreen; */
     width: 100%;
     padding: 0 10px;
     background: rgba(255,255,255,0.3);
 }
 
-.faqsSection #one{
+/* the styling of the sections of questions and answers */
+.theBoxes #one, .theBoxes #two, .theBoxes #three, .theBoxes #four{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+/* the styling of the sections of questions*/
+.theBoxes #q1, .theBoxes #q2, .theBoxes #q3, .theBoxes #q4{
     font-family: "Trebuchet MS";
     font-size: 13px;
     font-weight: 700;
     line-height: 15px;
     text-align: justify;
     background: rgba(133,129,129,0.3);
-    padding: 15px 20px;
+    padding: 20px 20px;
     margin: 20px 20px 5px 20px;
-
-
 }
 
-.faqsSection #two{
+.theBoxes #q1{
+    padding-top: 35px;
+}
+.theBoxes #q2{
+    padding-top: 23px;
+}
+.theBoxes #q3{
+    padding-top: 25px;
+}
+.theBoxes #q4{
+    padding-top: 35px;
+}
+
+/* the styling of the sections of answers */
+.theBoxes #a1, .theBoxes #a2, .theBoxes #a3, .theBoxes #a4{
     font-family: "Trebuchet MS";
     font-size: 13px;
     font-weight: 700;
     line-height: 15px;
     text-align: justify;
     background: rgba(133,129,129,0.1);
-    padding: 15px 20px;
+    padding: 20px 20px;
     margin: 5px 20px 20px 20px;
-
 }
 
-/* += start of the contact us section =+ */
+.theBoxes #a1{
+    padding-top: 25px;
+}
+.theBoxes #a2{
+    padding-top: 23px;
+}
+.theBoxes #a3{
+    padding-top: 10px;
 
+}
+/* the hover styling of the hyperlink */
+.theBoxes a{
+    color: black;
+    text-decoration: none;
+}
+.theBoxes a:hover{
+    font-size: 105%;
+    text-decoration: underline;
+}
+/*+= End of the feedback section of the page =+*/
+
+
+/*+= Start of the contact us section of the page =+*/
 .theContainer {
     background: rgba(255,255,255,0.3);
     margin-bottom: 15px;
-    /* border: solid red; */
 }
 
+/* the styling of the content of the contact us section */
 .theContainer p{
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 24px;
@@ -256,14 +300,13 @@ button{
     padding-top: 0;
 }
 
-
+/* the styling of the images of the contact us section */
 .theImages {
     display: flex;
     flex: row;
     float: right;
     margin-top: -65px;
     margin-right: 10px;
-
 }
 
 .theImages img{
@@ -272,7 +315,65 @@ button{
     margin-left: 10px;
 }
 
+.theImages a:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+/*+= End of the contact us section of the page =+*/
+/* === END OF MAIN SECTION === */
 
+
+/* Making the website responsive */
+/* when the max-width is 750px*/
+@media screen and (max-width: 750px) {
+    .theBoxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .theBoxes #one, .theBoxes #two, .theBoxes #three, .theBoxes #four{
+        width: 100%;
+    }
+
+}
+
+/* when the max-width is 620px*/
+@media screen and (max-width: 620px) {
+    .page-header h1{
+        font-size: 80px;
+        font-weight: 600;
+    }
+    header h1{
+        font-size: 45px;
+    }
+    .feedbackForm #lname{
+        box-sizing: border-box;
+
+    }
+    .theImages{
+        margin-top: 15px;
+        float: right;
+    }
+}
+
+/* when the max-width is 450px*/
+@media screen and (max-width: 450px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    .page-header h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
 
 
 

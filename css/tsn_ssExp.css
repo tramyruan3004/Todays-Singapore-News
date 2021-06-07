@@ -1,10 +1,14 @@
+/* Import all the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
 
+/* set color #808080 as a variable */
 :root {
     --navBorderColor: #808080;
 }
 
+/* reset the html and set max-width  */
 * {
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +26,7 @@ html{
 }
 
 /* === Start of the header === */
-/* the name of the website */
+/* the name of the website styling */
 header h1{
     font-family: 'ChomskyRegular';
     font-weight: normal;
@@ -30,10 +34,9 @@ header h1{
     font-size: 60px;
     padding: 5px;
     text-align: center;
-    /* border: solid red; */
 }
 
-/* the menu bar */
+/* the menu bar styling*/
 nav{
     margin: 0 auto;
     padding: 0 0;
@@ -60,8 +63,10 @@ nav a:hover {
     background-color: rgba(20, 20, 20, 0.699);
     color: white;
 }
+/* === End of the header === */
 
-/* the header of the website */
+/* === Start of the page-header section === */
+/* the header of the page */
 .page-header h1 {
     margin: 0 auto;
     width: 96%;
@@ -72,10 +77,10 @@ nav a:hover {
     font-weight: 450;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
-    /* border: solid red; */
-    letter-spacing: 5px;
+    letter-spacing: -10px;
 }
 
+/* the sub-headline of the page */
 .page-header h2{
     margin: 0 auto;
     width: 96%;
@@ -83,148 +88,235 @@ nav a:hover {
     text-transform: uppercase;
     font-family: 'Segoe UI';
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
     padding: 2px 0;
     border-bottom: 2px solid var(--navBorderColor);
-    /* border: solid red; */
 }
+/* === End of the page-header section === */
 
-/* === END OF HEADER ===  */
 /* === START OF THE MAIN SECTION ===  */
 main{
     display: grid;
     grid-template-columns: auto auto auto;
     width: 96%;
     margin: 8px auto;
-    /* border: solid red; */
 }
 
-/* Column 1 styling */
+/*+= Start of the column1 of the page =+*/
+/* column 1 styling */
 .column1 {
-    /* width: 26%; */
     margin: 0 auto;
-    /* background-color: cadetblue; */
 }
+
+/* the heading of column1 */
 .column1 h2{
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 27px;
     text-align: center;
-    width: 40%;
-    /* background-color: mediumvioletred; */
+    width: 50%;
     margin-bottom: 5px;
-
 }
+
+/* the image on the column1 part styling*/
 .column1 img{
-    width: 215px;
+    width: 220px;
     height: 236px;
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     object-fit: cover;
 }
 
+/* the content of column1 part styling */
 .column1 p {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
+/*+= End of the column1 of the page =+*/
 
-/* Column 2 styling */
+/*+= Start of the column2 of the page =+*/
+/* column 2 styling */
 .column2 {
-    /* width: 42%; */
     margin: 0 auto;
     border-left: 2px solid black;
     border-right: 2px solid black;
-    /* background-color: darksalmon; */
-
-
 }
 
+/* the image on the column2 part styling*/
 .column2 img{
-    width: 373px;
+    width: 450px;
     height: 301px;   
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto;
     object-fit: cover; 
 }
 
+/* the header of column2 */
 .column2 h1{
     font-family: "Showcard Gothic";
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 400;
-    line-height: 43px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     border-top: 1.4px solid black;
     border-bottom: 1.4px solid black;
-    width: 94%;
-
+    width: 96%;
 }
 
-
+/* the content of column2 part styling */
 .column2 p {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
     margin: 0 10px ;
 }
 
+/* the table of grades styling */
 .column2 table{
-    width: 90%;
+    width: 96%;
+    text-align: center;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 13px;
+    margin: 10px auto;
+    background-color:rgba(138,128,128,0.3);
 }
-
 .column2 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 3px;
+}
+/*+= End of the column2 of the page =+*/
 
-
-/* Column 3 styling */
+/*+= Start of the column3 of the page =+*/
+/* column 3 styling */
 .column3 {
-    /* width: 30%; */
     margin: 0 auto;
-    /* background-color:slateblue; */
 }
 
+/* the heading of column3 */
 .column3 h2{
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 27px;
     text-align: center;
-    width: 50%;
-    /* background-color: mediumvioletred; */
+    width: 60%;
     margin-bottom: 5px;
 }
 
+/* the image on the column3 part styling*/
 .column3 img{
     width: 236px;
     height: 236px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
     object-fit: cover;
 }
 
+/* the content of column3 part styling */
 .column3 p {
     font-family: 'Merriweather Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13.5px;
     font-weight: 400;
     line-height: 14px;
     text-align: justify;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 
 }
-
+/*+= End of the column3 of the page =+*/
 /* === END OF THE MAIN SECTION ===  */
 
 
+/* Making the website responsive */
+/* when the max-width is 900px*/
+@media screen and (max-width: 900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 
+    img{
+        width: 100%;
+    }
 
+    main div{
+        border-bottom: 2px solid var(--navBorderColor);
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .column2{
+        border-left: none;
+        border-right: none;
+        width: 100%;
+    }
+
+    main div:last-of-type{
+        border-bottom: none;
+    }
+
+    .column1 img, .column3 img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column1 h2, .column3 h2{
+        width: 100%;
+    }
+}
+
+/* when the max-width is 700px*/
+@media screen and (max-width: 700px) {
+    header h1{
+        font-size: 50px;
+    }
+
+    .page-header h1{
+        font-size: 80px;
+    }
+}
+
+/* when the max-width is 500px*/
+@media screen and (max-width: 500px) {
+    header h1{
+        font-size: 30px;
+    }
+
+    .page-header h1{
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: -8px;
+
+    }
+
+    .page-header h2{
+        font-size: 15px;
+    }
+
+    table{
+        display: block;
+        width: 800px;
+        overflow-x: scroll ;
+        white-space: nowrap;
+    }
+
+    .column2 img{
+        width: 95%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 

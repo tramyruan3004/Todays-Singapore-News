@@ -1,0 +1,366 @@
+/* Import all the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* set color #808080 as a variable */
+:root {
+    --navBorderColor: #808080;
+}
+
+/* reset the html and set max-width  */
+*{
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+/* the background of the website */
+html{
+    background-image: url('../img/bgNp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e6e4dd;
+
+}
+
+
+/* === Start of the header === */
+/* the name of the website styling */
+header h1{
+    font-family: 'ChomskyRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* the menu bar styling*/
+nav{
+    margin: 0 auto;
+    padding: 0 0;
+    width: 96%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--navBorderColor);
+    border-bottom: 2px solid var(--navBorderColor);
+}
+
+nav a{
+    font-family:"SimSun-ExtB";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+nav a:hover {
+    background-color: rgba(20, 20, 20, 0.699);
+    color: white;
+}
+/* === End of the header === */
+
+/* === Start of the page-header section === */
+/* the header of the page */
+.page-header h1 {
+    margin: 0 auto;
+    width: 96%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-family: 'Segoe UI';
+    font-weight: 450;
+    padding: 0 0;
+    border-bottom: 2px solid var(--navBorderColor);
+    letter-spacing: -15px;
+}
+/* === End of the page-header section === */
+
+
+/* === START OF MAIN ===  */
+main{
+    width: 96%;
+    margin: 0 auto;
+}
+
+/*+= Start of the upper part of the page =+*/
+/* the upper part */
+.upperPart{
+    display: grid;
+    grid-template-columns: 72% 28%;
+}
+
+/*+ start of left section of the upper part +*/
+/* the left section of the upper part */
+.leftOne{
+    padding: 10px;
+    padding-left: 0;
+}
+
+/* the styling of the image on the left section of the upper part */
+.leftOne img{
+    width: 200px;
+    height: 285px;
+    object-fit: cover;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* the styling of the header on the left section of the upper part */
+.leftOne h1{
+    font-family: "Bernard MT";
+    font-size: 48px;
+    font-stretch: condensed;
+    font-weight: 400;
+    line-height: 61px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* the styling of the sub-header on the left section of the upper part */
+.leftOne h2{
+    font-family: "Bernard MT";
+    font-size: 28px;
+    font-stretch: condensed;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+/* the styling of the content on the left section of the upper part */
+.leftOne p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    padding-top: 3px;
+}
+/*+ end of left section of the upper part +*/
+
+
+/*+ start of right section of the upper part +*/
+/* the right section of the upper part */
+.rightOne{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 0;
+    border-left: solid 2px black;
+    padding-left: 10px;
+}
+
+/* the styling of the header on the right section of the upper part */
+.rightOne h1{
+    font-family: "Nirmala UI";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    padding: 8px 15px ;
+    width: 80%;
+}
+
+/* the styling of the content on the right section of the upper part */
+.rightOne p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+/* the styling of the list in the content on the right section of the upper part */
+.rightOne li{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    margin: 10px 0;
+}
+/*+ end of right section of the upper part +*/
+/*+= End of the upper part of the page =+*/
+
+
+/*+= Start of the lower part of the page =+*/
+/* the lower part */
+.lowerPart{
+    display: grid;
+    grid-template-columns: 72% 28%;
+    border-top: solid 2px black ;
+    padding-top: 10px;
+}
+
+/*+ start of left section of the lower part +*/
+/* the left section of the lower part */
+.leftTwo{
+    padding: 8px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+/* the styling of the header on the left section of the lower part */
+.leftTwo h1{
+    font-family: "Bernard MT";
+    font-size: 35px;
+    font-stretch: condensed;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* the styling of the image on the left section of the lower part */
+.leftTwo #floatImg{
+    width: 250px;
+    height: 170px;
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+/* the styling of the content on the left section of the lower part */
+.leftTwo p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+}
+/*+ end of left section of the lower part +*/
+
+
+/*+ start of right section of the lower part +*/
+/* the right section of the lower part */
+.rightTwo{
+    margin-top: 10px;
+    padding-right: 0;
+    border-left: solid 2px black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* the styling of the header on the right section of the lower part */
+.rightTwo h1{
+    font-family: "Nirmala UI";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    padding: 8px 15px ;
+    width: 80%;
+    margin: 0 auto
+}
+
+/* the styling of the content on the right section of the lower part */
+.rightTwo p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 15px 0;  
+}
+
+/* the styling of the list in the content on the right section of the lower part */
+.rightTwo li{
+    padding-left: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: justify;
+    margin: 8px 0;
+}
+/*+ end of right section of the lower part +*/
+/*+= End of the lower part of the page =+*/
+/* === END OF MAIN SECTION === */
+
+/* === Start of the footer === */
+/* the styling of the footer */
+footer{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px;
+    background-color:rgba(98,98,98,0.1);
+    margin-top: 8px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    font-size: 105%;
+    text-decoration: underline;
+}
+/* === End of the footer === */
+
+/* Making the website responsive */
+/* when the max-width is 900px*/
+@media screen and (max-width: 900px) {
+    .upperPart, .lowerPart{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightOne, .rightTwo{
+        border-left: none;
+    }
+    .rightTwo li{
+        display: inline-block;
+    }
+}
+
+/* when the max-width is 650px*/
+@media screen and (max-width: 650px) {
+    .page-header h1{
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: -5px;
+    }
+    header h1{
+        font-size: 45px;
+    }
+}
+
+/* when the max-width is 450px*/
+@media screen and (max-width: 450px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    .page-header h1{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -4px;
+    }
+    .leftOne img{
+        width: 40%;
+    }
+}

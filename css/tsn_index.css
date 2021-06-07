@@ -1,11 +1,14 @@
+/* Import all the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rancho&family=Reem+Kufi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&display=swap');
 
+/* set color #808080 as a variable */
 :root {
     --navBorderColor: #808080;
 }
 
+/* reset the html and set max-width  */
 *{
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +26,7 @@ html{
 
 
 /* === Start of the header === */
-/* the name of the website */
+/* the name of the website styling */
 header h1{
     font-family: 'ChomskyRegular';
     font-weight: normal;
@@ -31,10 +34,9 @@ header h1{
     font-size: 60px;
     padding: 5px;
     text-align: center;
-    /* border: solid red; */
 }
 
-/* the menu bar */
+/* the menu bar styling*/
 nav{
     margin: 0 auto;
     padding: 0 0;
@@ -61,8 +63,10 @@ nav a:hover {
     background-color: rgba(20, 20, 20, 0.699);
     color: white;
 }
+/* === End of the header === */
 
-/* the header of the website */
+/* === Start of the page-header section === */
+/* the headline of the page */
 .page-header h1 {
     margin: 0 auto;
     width: 96%;
@@ -73,10 +77,10 @@ nav a:hover {
     font-weight: 450;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
-    /* border: solid red; */
     letter-spacing: 5px;
 }
 
+/* the sub-headline of the page */
 .page-header h2{
     margin: 0 auto;
     width: 96%;
@@ -84,12 +88,11 @@ nav a:hover {
     text-transform: uppercase;
     font-family: 'Segoe UI';
     font-weight: 600;
-    font-size: 30px;
+    font-size: 26px;
     padding: 2px 0;
-    /* border: solid red; */
 }
+/* === End of the page-header section === */
 
-/* === END OF HEADER ===  */
 
 /* === START OF MAIN SECTION === */
 main{
@@ -97,38 +100,36 @@ main{
     flex: row;
     width: 96%;
     margin: 5px auto;
-    /* border: solid red; */
 }
-/*+= START OF LEFT SECTION =+*/
-/* the left section part */
+
+/*+= Start of the left section of the page =+*/
+/* the left section part styling*/
 .left-section {
     width: 60%;
     margin: 0 auto;
-    /* background-color: rgb(58, 58, 158); */
     padding-right: 8px;
 }
 
-/* the image on the left section part */
+/* the myPortrait image on the left section part styling*/
 .left-section img{
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
 
-/* the header h2 on the left section part */
+/* the title of the article on the left section part */
 .left-section h2{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 30px;
     font-weight: 650;
     color: black;
     padding-top: 5px;
-    /* background: lightblue; */
 }
 
-/* the name of the Picture1 on the left section part */
+/* the name of the image on the left section part */
 .left-section #nameOfPic1{
     font-family: "Reem Kufi";
-    font-size: 9px;
+    font-size: 9.5px;
     font-weight: 600;
     line-height: 12px;
     text-transform: uppercase;
@@ -137,10 +138,9 @@ main{
     padding-top: 4px;
     border-top: 0.5px dashed var(--navBorderColor);
     margin-top: -8px;
-    /* background: salmon; */
 }
 
-/* the information of the Picture1 on the left section part */
+/* the information of the image on the left section part */
 .left-section #infoOfPic1{
     font-family: "Reem Kufi";
     font-size: 9px;
@@ -150,79 +150,72 @@ main{
     text-align: left;
     color: black;
     padding-bottom: 2px;
-    /* background:palevioletred; */
     margin-top: -2px;
     border-bottom: 0.5px dashed var(--navBorderColor);
 }
 
-/* the content of the article on the left section part */
+/* the content on the left section part styling */
 .contentOfLeftSection {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 15px;
     text-align: justify;
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 10px auto;
 }
-
 .contentOfLeftSection #one{
     padding-right: 5px;
-    /* background-color: lightcoral; */
 }
-
 .contentOfLeftSection #two{
     padding-left: 5px;
-    /* background-color: cornflowerblue; */
 }
-/*+= END OF LEFT SECTION =+*/
+/*+= End of the left section of the page =+*/
 
-/*+= START OF RIGHT SECTION =+*/
-/* the right section part */
+
+/*+= Start of the right section of the page =+*/
+/* the right section part styling*/
 .right-section {
     width: 40%;
-    /* background-color: rgb(194, 119, 48); */
     padding-left: 5px;
 
 }
 
-/* the image on the right section part */
-.right-section img{
+/* the myFamily image on the right section part styling*/
+.right-section #familyPic{
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-
-.right-section h1{
+/* the caption of the image on the right section part */
+.right-section h2{
     font-family: 'Rancho', cursive;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
     text-transform: uppercase;
     text-align: left;
     color: black;
-    padding: 0 0;
-    /* background:rgb(116, 14, 116); */
+    padding-bottom: -3px;
     border-bottom: 2.5px solid black;
     margin-top: 3px;
 }
 
-.right-section h2{
+/* the title of the article on the right section part */
+.right-section h1{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 25px;
     font-weight: 650;
     color: black;
     padding-top: 5px;
-    /* background: lightblue; */
     margin-top: -2px;
 }
 
-/* the name of the Picture2 on the right section part */
+/* the name of the image on the right section part */
 .right-section #nameOfPic2{
     font-family: "Reem Kufi";
-    font-size: 8px;
+    font-size: 8.5px;
     font-weight: 600;
     line-height: 10px;
     text-transform: uppercase;
@@ -231,10 +224,9 @@ main{
     padding-top: 4px;
     border-top: 0.5px dashed var(--navBorderColor);
     margin-top: -8px;
-    /* background: salmon; */
 }
 
-/* the information of the Picture2 on the right section part */
+/* the information of the image on the right section part */
 .right-section #infoOfPic2{
     font-family: "Reem Kufi";
     font-size: 8px;
@@ -244,47 +236,53 @@ main{
     text-align: left;
     color: black;
     padding-bottom: 2px;
-    /* background:palevioletred; */
     margin-top: -2px;
     border-bottom: 0.5px dashed var(--navBorderColor);
 }
 
+/* the content on the right section part styling */
 .contentOfRightSection{
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 15.5px;
     text-align: justify;
     margin: 5px auto
 }
 
-/*+= END OF RIGHT SECTION =+*/
-
-/* the quotation section part */
+/*+= Start of the quotes section of the page =+*/
 .quotes{
     display: grid;
     grid-template-rows: auto auto auto;
     padding: 0;
     margin: 0 auto;
-    /* background-color:  rgb(99, 145, 31); */
+    margin-bottom: 8px;
 }
-/* the first section on the quotation section part */
+
+/* the link hover styling */
+.quotes a{
+    color: black;
+    text-decoration: none;
+}
+.quotes a:hover{
+    font-size: 105%;
+    text-decoration: underline;
+}
+
+/* the first quote on the quotes section part */
 .firstQuote{
     display: grid;
     grid-template-columns: 60% 40%;
     margin-top: 8px;
 }
-
 .firstQuote #img1{
     width: 100%;
     height: 118px;
     object-fit: cover;
     margin: 0;
     padding-right: 8px;
-    /* background-color: mediumslateblue; */
 }
-
-.firstQuote #quote1{
+.firstQuote #quote1 {
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 24px;
     text-align: right;
@@ -292,6 +290,7 @@ main{
     background: rgba(138,128,128,0.3);
 }
 
+/* the second quote on the quotes section part */
 .secondQuote{
     display: grid;
     grid-template-columns: 33% 67%;
@@ -310,10 +309,9 @@ main{
     object-fit: cover;
     margin-right: 0;
     padding-left: 8px;
-    /* background-color: mediumslateblue; */
 }
 
-/* the first section on the quotation section part */
+/* the third quote on the quotes section part */
 .thirdQuote{
     display: grid;
     grid-template-columns: 67% 33%;
@@ -334,5 +332,65 @@ main{
     padding-right: 5px;
     background: rgba(138,128,128,0.3);
 }
+/*+= End of the quotes section of the page =+*/
+/*+= End of the right section of the page =+*/
+/* === END OF MAIN SECTION === */
 
 
+/* Making the website responsive */
+/* when the max-width is 900px and min-width is 650px */
+@media screen and (max-width: 900px) and (min-width: 650px){
+    .firstQuote, .secondQuote, .thirdQuote{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* when the max-width is 650px */
+@media screen and (max-width: 650px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-section, .right-section{
+        width: 95%;
+    }
+    .right-section{
+        margin-top: 15px;
+    }
+    .right-section #familyPic{
+        height: 300px;
+        margin: 0 auto;
+
+    }
+    .left-section img{
+        margin: 0 auto;
+    }
+    .page-header h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+/* when the max-width is 430px */
+@media screen and (max-width: 430px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    .contentOfLeftSection{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .quotes #img1{
+       margin-top: 8px;
+    }
+}
