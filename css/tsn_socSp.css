@@ -74,7 +74,7 @@ nav a:hover {
     text-transform: uppercase;
     font-size: 120px;
     font-family: 'Segoe UI';
-    font-weight: 450;
+    font-weight: 400;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
     letter-spacing: 3px;

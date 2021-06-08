@@ -74,7 +74,7 @@ nav a:hover {
     text-transform: uppercase;
     font-size: 120px;
     font-family: 'Segoe UI';
-    font-weight: 450;
+    font-weight: 400;
     padding: 0 0;
     border-bottom: 2px solid var(--navBorderColor);
     letter-spacing: 5px;
@@ -97,7 +97,7 @@ nav a:hover {
 /* === START OF MAIN SECTION === */
 main{
     display: flex;
-    flex: row;
+    flex-direction: row;
     width: 96%;
     margin: 5px auto;
 }
@@ -121,7 +121,7 @@ main{
 .left-section h2{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 30px;
-    font-weight: 650;
+    font-weight: 600;
     color: black;
     padding-top: 5px;
 }
@@ -197,7 +197,6 @@ main{
     text-transform: uppercase;
     text-align: left;
     color: black;
-    padding-bottom: -3px;
     border-bottom: 2.5px solid black;
     margin-top: 3px;
 }
@@ -206,7 +205,7 @@ main{
 .right-section h1{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 25px;
-    font-weight: 650;
+    font-weight: 600;
     color: black;
     padding-top: 5px;
     margin-top: -2px;
